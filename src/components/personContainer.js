@@ -8,9 +8,6 @@ class personContainer extends Component {
         
         this.state = {
             currentIndex: 0,
-            editing: false,
-            deleting: false,
-            new: false
         }
     }
 
@@ -31,7 +28,6 @@ class personContainer extends Component {
 
 
     render(){
-      const {onEdit} = this.props;
         return(
             <div>
                 <PersonDetail

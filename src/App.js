@@ -1,16 +1,15 @@
 import './App.css';
-import Container from './components/container'
-import PersonContainer from './components/personContainer'
-
+import Container from './components/container';
+import PersonContainer from "./components/personContainer";
 
 function App() {
   return (
     <div className="App">
-        <Container/>
+       <Container/>
         <PersonContainer/>
         {/*  */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App; 

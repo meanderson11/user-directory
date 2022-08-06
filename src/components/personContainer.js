@@ -8,6 +8,9 @@ class personContainer extends Component {
         
         this.state = {
             currentIndex: 0,
+            editing: false,
+            deleting: false,
+            new: false
         }
     }
 
@@ -24,8 +27,11 @@ class personContainer extends Component {
         this.setState({currentIndex: index - 1 })
         }
     }
+    
+
 
     render(){
+      const {onEdit} = this.props;
         return(
             <div>
                 <PersonDetail
@@ -35,8 +41,17 @@ class personContainer extends Component {
                     <h3 onClick={() => this.previousPerson()}>{'<'} Prev</h3>
                     <h3 onClick={() => this.nextPerson()}>Next {'>'}</h3>
                 </div>
+                <div className="buttons-1">
+                <button onClick={() => {this.setState({ editing: true });
+              }}>Edit</button>
+            <button onClick={() => {this.setState({ deleting: true });
+              }}>Delete</button>
+            <button onClick={() => {this.setState({ new: true });
+              }}>New</button>
+            </div>
             </div>
         )
     }
 }
+
 export default personContainer

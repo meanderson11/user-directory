@@ -69,6 +69,36 @@
   color: #ebebeb;
 }
 
+.buttons-1 {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 20px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button {
+  border-radius: 30px;
+  background-color: rgb(55, 145, 230);
+  color: white;
+  display:flex;
+  justify-content: space-around;
+  margin-right: 20px;
+  font-size: 25px;
+}
+.buttons-1 button:hover {
+  background-color: #3e8e41;
+}
 .movie-list {
   width: 100%;
   display: flex;

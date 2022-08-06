@@ -1,11 +1,9 @@
 import React from 'react';
 
 function container() {
-    return(
-        <div>
-            <header className='header'>
-                <h3>Home</h3>
-            </header>
+    return (
+        <div className='header'>
+            <h3>Home</h3>
         </div>
     )
 }
